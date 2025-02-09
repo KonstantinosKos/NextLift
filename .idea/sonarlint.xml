@@ -4,6 +4,7 @@
     <option name="moduleMapping">
       <map>
         <entry key="gateway2" value="gateway" />
+        <entry key="loginService" value="authService" />
       </map>
     </option>
   </component>
