@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SonarLintProjectSettings">
+    <option name="moduleMapping">
+      <map>
+        <entry key="SsoService" value="SsoService" />
+        <entry key="gateway2" value="gateway" />
+        <entry key="gymuserservice" value="gymuser" />
+        <entry key="loginService" value="authService" />
+        <entry key="ssoservice2" value="ssoservice" />
+      </map>
+    </option>
+  </component>
+</project>
