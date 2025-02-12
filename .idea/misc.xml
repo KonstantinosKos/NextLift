@@ -4,17 +4,20 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/backend/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/backend/authservice/pom.xml" />
         <option value="$PROJECT_DIR$/backend/authService/pom.xml" />
         <option value="$PROJECT_DIR$/backend/loginService/pom.xml" />
         <option value="$PROJECT_DIR$/backend/ssoservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuser/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuserservice/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/backend/authService/pom.xml" />
         <option value="$PROJECT_DIR$/backend/authservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuserservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/ssoservice2/pom.xml" />
       </set>
     </option>
   </component>

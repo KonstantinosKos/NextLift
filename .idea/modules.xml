@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/NextLift.iml" filepath="$PROJECT_DIR$/.idea/NextLift.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SsoService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SsoService.main.iml" />
     </modules>
   </component>
 </project>
