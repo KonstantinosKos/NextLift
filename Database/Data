@@ -1,0 +1,9 @@
+/*create database */
+create database Nextlift;
+/*Δημιουργία πίνακα*/
+create table Nextlift.userLogin(
+id int);
+alter table nextlift.userlogin
+add column username varchar(255),
+add column `password` varchar(255);
+select * from nextlift.userlogin;
