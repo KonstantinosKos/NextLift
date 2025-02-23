@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/backend/authservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/authService/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/loginService/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/ssoservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuser/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuserservice/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/backend/authService/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/authservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/gymuserservice/pom.xml" />
+        <option value="$PROJECT_DIR$/backend/ssoservice2/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21_PREVIEW" project-jdk-name="21" project-jdk-type="JavaSDK" />
+</project>
