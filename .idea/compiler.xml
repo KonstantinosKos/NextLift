@@ -12,6 +12,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="authservice" target="21" />
+      <module name="gateway.main" target="21" />
+      <module name="gateway.test" target="21" />
       <module name="gateway2" target="21" />
       <module name="gymuserservice" target="21" />
       <module name="loginService" target="21" />
