@@ -1,6 +1,6 @@
 spring:
   application:
-  name: ssoService
+    name: ssoService
   datasource:
     url: jdbc:h2:mem:testdb  # In-memory database
     driver-class-name: org.h2.Driver
@@ -19,3 +19,7 @@ jwt:
     3600000
   secret:
     MySuperSecureSecretKeyForJWTsWithHS256!
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

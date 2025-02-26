@@ -33,6 +33,7 @@ dependencies {
 	implementation 'org.springframework.security:spring-security-web:6.4.2'
 	implementation 'org.springframework.security:spring-security-config:6.4.2'
 	implementation 'com.h2database:h2'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.2.0'
 
 //	runtimeOnly 'org.postgresql:postgresql'
 	compileOnly 'org.projectlombok:lombok'

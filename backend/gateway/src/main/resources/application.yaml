@@ -13,3 +13,7 @@ spring:
             - Path=/auth/**
           filters:
             - RewritePath=/auth/(?<segment>.*), /api/auth/${segment}
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
