@@ -2,6 +2,7 @@ package com.nextlift.SsoService.controller;
 
 import com.nextlift.SsoService.jwtUtils.JwtUtil;
 import com.nextlift.SsoService.model.GymUser;
+import com.nextlift.SsoService.payload.ResponseC;
 import com.nextlift.SsoService.repository.GymUserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -27,7 +28,7 @@ public class GymUserController {
     private final JwtUtil jwtUtils;
 
     @PostMapping("/signin")
-    public String authenticateUser(@RequestBody GymUser user) {
+    public ResponseEntity<ResponseC> authenticateUser(@RequestBody GymUser user) {
         Authentication authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         user.getUsername(),
@@ -35,7 +36,7 @@ public class GymUserController {
                 )
         );
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-        return jwtUtils.generateToken(userDetails.getUsername());
+        return ResponseEntity.ok().body( new ResponseC(jwtUtils.generateToken(userDetails.getUsername())));
     }
 
     @PostMapping("/signup")
