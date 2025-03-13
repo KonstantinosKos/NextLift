@@ -15,6 +15,12 @@ spring:
             - Path=/auth/**
           filters:
             - RewritePath=/auth/(?<segment>.*), /api/auth/${segment}
+        - id: ml-service
+          uri: http://localhost:5000
+          predicates:
+            - Path=/**
+          filters:
+            - RewritePath=/ml/(?<segment>.*), /api/ml/${segment}
 eureka:
   client:
     serviceUrl:
