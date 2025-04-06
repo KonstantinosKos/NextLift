@@ -1,1 +1,52 @@
+-- 1. Select All Actors
+SELECT * FROM actor;
 
+-- 2. Find All Movies
+SELECT title, release_year FROM film;
+
+
+-- 3. Filter Movies Released in 2006
+SELECT title FROM film
+WHERE release_year = 2006;
+
+-- 4. Get All Customers from Canada
+SELECT first_name, last_name FROM customer
+JOIN address ON customer.address_id = address.address_id
+JOIN city ON address.city_id = city.city_id
+JOIN country ON city.country_id = country.country_id
+WHERE country.country = 'Canada';
+
+
+-- 5. List Rentals Made by a Specific Customer (e.g., Customer ID 1)
+SELECT rental_id, rental_date FROM rental
+WHERE customer_id = 1;
+
+
+-- 6. Count the Number of Films in Each Rating Category
+SELECT rating, COUNT(*) AS film_count
+FROM film
+GROUP BY rating;
+
+-- 7. Show Top 5 Longest Movies
+SELECT title, length FROM film
+ORDER BY length DESC
+LIMIT 5;
+
+-- 8. Find All Comedy Films
+SELECT title FROM film
+JOIN film_category ON film.film_id = film_category.film_id
+JOIN category ON film_category.category_id = category.category_id
+WHERE category.name = 'Comedy';
+
+-- 9. Find the Number of Rentals per Customer
+SELECT customer_id, COUNT(*) AS rental_count
+FROM rental
+GROUP BY customer_id
+ORDER BY rental_count DESC;
+
+-- 10. Join Films and Actors
+SELECT f.title, a.first_name, a.last_name
+FROM film f
+JOIN film_actor fa ON f.film_id = fa.film_id
+JOIN actor a ON fa.actor_id = a.actor_id
+WHERE f.title = 'ACADEMY DINOSAUR';
